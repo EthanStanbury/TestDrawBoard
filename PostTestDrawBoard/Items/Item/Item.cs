@@ -6,7 +6,12 @@ using PostTestDrawBoard.Items.Packs;
 
 namespace PostTestDrawBoard.Items.Item
 {
-    public class  Item : IItem
+    /// <summary>
+    /// The base class that all of the items currently use. This class needs to be pretty generic as it is meant to service everything.
+    /// Current logic is each item that inherits from 'Item' will determine its own price and if it has a pack, as that is the responsibility of that item.
+    /// If this gets too complicated look at separating out items into other classes that inherit from here.
+    /// </summary>
+    public class Item : IItem
     {
         public int Count = 0;
         public IPack? Pack;
@@ -31,7 +36,7 @@ namespace PostTestDrawBoard.Items.Item
             Price = price;
             Pack = pack;
         }
-        public void AddItem()
+        public virtual void AddItem()
         {
             Count += 1;
         }

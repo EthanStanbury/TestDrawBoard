@@ -1,6 +1,4 @@
-﻿using PostTestDrawBoard.Items.Item;
-
-namespace PostTestDrawBoard
+﻿namespace PostTestDrawBoard.Items.Item
 {
     public class BItem : Item
     {

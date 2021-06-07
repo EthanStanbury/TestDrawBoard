@@ -1,4 +1,4 @@
-﻿namespace PostTestDrawBoard.Items
+﻿namespace PostTestDrawBoard.Items.Interfaces
 {
     public interface IItem
     {

@@ -1,7 +1,6 @@
-﻿using PostTestDrawBoard.Items.Item;
-using PostTestDrawBoard.Items.Packs;
+﻿using PostTestDrawBoard.Items.Packs;
 
-namespace PostTestDrawBoard
+namespace PostTestDrawBoard.Items.Item
 {
     public class CItem : Item
     {
